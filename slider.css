@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 100vh;
+}
+.frame {
+  width: 500px;
+  height: 300px;
+  /* background: rebeccapurple; */
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: all 1s ease;
+}
+.slider .images {
+  /* height: 300px;
+  width: 500px; */
+  width: 100%;
+  /* height: 100%; */
+  /* z-index: 999; */
+}
+.slider .images img {
+  object-fit: cover;
+  /* height: 100%; */
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 500px;
+  height: 300px;
+}
+.arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+ion-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
